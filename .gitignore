@@ -6,3 +6,4 @@ build/
 .DS_Store
 .idea/
 sql/base/world_548_20240722.sql
+sql_update_import.log

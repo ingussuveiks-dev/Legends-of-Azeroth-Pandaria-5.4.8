@@ -23,7 +23,8 @@
         "LIB_EAY_LIBRARY_RELEASE": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libcrypto.lib",
         "SSL_EAY_LIBRARY_RELEASE": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libssl.lib",
         "LIB_EAY_LIBRARY_DEBUG": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libcrypto.lib",
-        "SSL_EAY_LIBRARY_DEBUG": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libssl.lib"
+        "SSL_EAY_LIBRARY_DEBUG": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libssl.lib",
+        "TOOLS": "ON"
       }
     }
   ],
