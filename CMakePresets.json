@@ -1,0 +1,38 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 27,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "windows-wamp-vs2022",
+      "displayName": "Windows Wampserver VS2022",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/Build",
+      "cacheVariables": {
+        "BOOST_ROOT": "C:/local/boost_1_85_0",
+        "Boost_INCLUDE_DIR": "C:/local/boost_1_85_0",
+        "BOOST_LIBRARYDIR": "C:/local/boost_1_85_0/lib64-msvc-14.3",
+        "MYSQL_INCLUDE_DIR": "C:/wamp64/bin/mysql/mysql5.7.44/include",
+        "MYSQL_LIBRARY": "C:/wamp64/bin/mysql/mysql5.7.44/lib/libmysql.lib",
+        "MYSQL_EXECUTABLE": "C:/wamp64/bin/mysql/mysql5.7.44/bin/mysql.exe",
+        "OPENSSL_ROOT_DIR": "C:/Program Files/OpenSSL-Win64",
+        "OPENSSL_INCLUDE_DIR": "C:/Program Files/OpenSSL-Win64/include",
+        "LIB_EAY_LIBRARY_RELEASE": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libcrypto.lib",
+        "SSL_EAY_LIBRARY_RELEASE": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libssl.lib",
+        "LIB_EAY_LIBRARY_DEBUG": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libcrypto.lib",
+        "SSL_EAY_LIBRARY_DEBUG": "C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libssl.lib"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-wamp-vs2022-relwithdebinfo",
+      "displayName": "Windows Wampserver VS2022 RelWithDebInfo",
+      "configurePreset": "windows-wamp-vs2022",
+      "configuration": "RelWithDebInfo"
+    }
+  ]
+}
