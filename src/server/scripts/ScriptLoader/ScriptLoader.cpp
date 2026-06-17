@@ -2141,6 +2141,7 @@ void AddSC_custom_reward();
 void AddSC_boost_profession();
 void AddSC_custom_items();
 void AddSC_solocraft_system();
+void AddSC_vip_utility_master();
 
 void AddCustomScripts()
 {
@@ -2152,6 +2153,7 @@ void AddCustomScripts()
 //AddSC_boost_profession();
 //AddSC_custom_items();
 	AddSC_solocraft_system();
+    AddSC_vip_utility_master();
 
 #endif
     AddSC_Anticheat();
