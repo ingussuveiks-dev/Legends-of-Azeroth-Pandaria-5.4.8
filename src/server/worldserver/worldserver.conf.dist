@@ -118,6 +118,7 @@ LogsDir = "Logs"
 #    LoginDatabaseInfo
 #    WorldDatabaseInfo
 #    CharacterDatabaseInfo
+#    PlayerbotsDatabaseInfo
 #        Description: Database connection settings for the world server.
 #        Example:     "hostname;port;username;password;database"
 #                     ".;somenumber;username;password;database" - (Use named pipes on Windows
@@ -125,13 +126,15 @@ LogsDir = "Logs"
 #                                                                 section my.ini)
 #                     ".;/path/to/unix_socket;username;password;database" - (use Unix sockets on
 #                                                                           Unix/Linux)
-#        Default:     "127.0.0.1;3306;skyfire;skyfire;auth"       - (LoginDatabaseInfo)
-#                     "127.0.0.1;3306;skyfire;skyfire;world"      - (WorldDatabaseInfo)
-#                     "127.0.0.1;3306;skyfire;skyfire;characters" - (CharacterDatabaseInfo)
+#        Default:     "127.0.0.1;3306;skyfire;skyfire;auth"           - (LoginDatabaseInfo)
+#                     "127.0.0.1;3306;skyfire;skyfire;world"          - (WorldDatabaseInfo)
+#                     "127.0.0.1;3306;skyfire;skyfire;characters"     - (CharacterDatabaseInfo)
+#                     "127.0.0.1;3306;skyfire;skyfire;acore_playerbots" - (PlayerbotsDatabaseInfo)
 
 LoginDatabaseInfo     = "127.0.0.1;3306;root;root;auth"
 WorldDatabaseInfo     = "127.0.0.1;3306;root;root;world"
 CharacterDatabaseInfo = "127.0.0.1;3306;root;root;characters"
+PlayerbotsDatabaseInfo = "127.0.0.1;3306;root;root;acore_playerbots"
 
 #
 #    LoginDatabase.WorkerThreads
@@ -3514,6 +3517,7 @@ Logger.root=5,Console Server
 Logger.server=3,Console Server
 Logger.commands.gm=3,Console GM
 Logger.sql.sql=5,Console DBErrors
+Logger.playerbots=3,Console Server
 
 #Logger.achievement=3,Console Server
 #Logger.auctionHouse=3,Console Server
